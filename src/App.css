@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e5e7eb, #c7d2fe);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* App card */
+.app {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+  text-align: center;
+}
+
+/* Dark Mode */
+.app.dark {
+  background: #111827;
+  color: #f9fafb;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.mode-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Timer */
+.timer {
+  color: #ef4444;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Question */
+.quiz h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.03);
+  background: #1d4ed8;
+}
+
+.app.dark button {
+  background: #4f46e5;
+}
+
+/* Result */
+.result h2 {
+  margin-bottom: 8px;
+}
+
+/* Developer Info */
+.developer {
+  margin-top: 18px;
+  padding-top: 12px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 13px;
+  text-align: center;
+}
+
+.developer a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.app.dark .developer {
+  border-color: #374151;
+}
+
+.app.dark .developer a {
+  color: #93c5fd;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .app {
+    margin: 10px;
+    padding: 18px;
+  }
+
+  .quiz h2 {
+    font-size: 16px;
+  }
+}
