@@ -33,7 +33,7 @@ function App() {
     const next = current + 1;
     if (next < questions.length) {
       setCurrent(next);
-      setTimeLeft(30);
+      setTimeLeft(10);
     } else {
       setShowResult(true);
     }
